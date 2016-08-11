@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>inline_block</title>
+		<style>
+		    *{
+		    	box-sizing: border-box;
+		    }
+
+		    body{
+		    	padding:0px;
+				margin:10px;
+		    }
+		    .row::after{
+		    	content:"";
+		    	clear:both;
+		    	display:block;
+		    }
+		    [class*="col-"]{
+		    	float:left;
+		    	padding:2%;
+		    }
+			#header{
+				
+				background-color:pink;
+				padding: 40px;
+				margin:0px;
+				color:white;
+				text-align: center;
+				font-size: 100%;
+				
+			}
+			ul{
+				list-style-type: none;
+				padding:0px;
+				margin:0px;
+			}
+			li{
+				
+				background-color:blue;
+				padding:20px;
+				margin-bottom:20px;
+				color:white;
+				text-align: center;
+			}
+			#article{
+				
+				background-color:white;
+				padding: 40px;
+				margin:0px;
+				color:black;
+		
+			}
+			aside{
+				background-color:blue;
+				padding:20px;
+				margin:20px 0px;
+				color:white;
+				text-align: center;
+			}
+			img{
+				max-width:100%;
+			}
+			footer{
+				background-color:blue;
+				padding:30px;
+				margin:0px;
+				color:white;
+				text-align: center;
+			}
+			video{
+				max-width:100%;
+			}
+
+			li:hover{
+				background-color: lightblue;
+			}
+
+			@media only screen and (orientation:landscape){
+               body{
+               	   background-color: cyan;
+               }
+			}
+
+			[class*="col-"]{
+		    		width:100%;
+		    	}
+
+			@media only screen and (min-width:600px){
+		    	body{
+		    		background-color: yellow;
+		    	}
+		    .col-tab-1{width:8.33%;}
+			.col-tab-2{width:16.66%;}
+			.col-tab-3{width:25%;}
+			.col-tab-4{width:33.33%;}
+			.col-tab-5{width:41.66%;}
+			.col-tab-6{width:50%;}
+			.col-tab-7{width:58.33%;}
+			.col-tab-8{width:66.66%;}
+			.col-tab-9{width:75%;}
+			.col-tab-10{width:83.33%;}
+			.col-tab-11{width:91.66%;}
+			.col-tab-12{width:100%;}
+		    	
+		    }
+
+			@media only screen and (min-width:800px){
+		    	body{
+		    		background-color: red;
+		    	}
+		    .col-1{width:8.33%;}
+			.col-2{width:16.66%;}
+			.col-3{width:25%;}
+			.col-4{width:33.33%;}
+			.col-5{width:41.66%;}
+			.col-6{width:50%;}
+			.col-7{width:58.33%;}
+			.col-8{width:66.66%;}
+			.col-9{width:75%;}
+			.col-10{width:83.33%;}
+			.col-11{width:91.66%;}
+			.col-12{width:100%;}
+		    	
+		    }
+		</style>
+	</head>
+	<body>
+		<header id="header"><h1>Cricket world</h1></header>
+		<nav id="menu" class="col-tab-3 col-3">
+			<ul>
+				<li>Lives Scores</li>
+				<li>IPL</li>
+				<li>News</li>
+				<li>about</li>
+			</ul>
+		</nav><section id="article" class="col-tab-9 col-6">
+			<h3>Advantages:</h3> 
+			   <p>1) Match is over in about 3 overs. Since time is off essence in our fast paced lives, most people prefer a shorter game.</p>
+			   <p>2) More entertainment than ODI or Test match cricket in a short burst.</p>
+			   <p>3) It closes the gap between the good teams and the lesser teams in that it provides the lesser team with a better chance to pull off an upset. </p>
+			<h3>Disadvantages:</h3> 
+			   <p>1) Quality of cricket is compromised as is the technique of players. Their temperament is not put to the test. Its a slog fest for most players.</p>
+			   <p>2) It doesn't provide the enthralling drama that we see in test cricket over a long period of time.</p>
+			   <p>3) It discourages the bowlers by shortening the boundary and putting in fielding restrictions. T20 is a batsman's game.</p>
+
+			<img src="http://todaymade.com/blog/wp-content/uploads/2013/07/HiRes.jpg">
+		</section>
+		<aside class="col-tab-12 col-3">
+			<h4>what?</h4>
+			<p>criket</p>
+			<h4>how?</h4>
+			<p>play</p>
+			<h4>where?</h4>
+			<p>born</p>
+			<video controls>
+				<source src="cri_video.mp4" type="video/mp4">
+				<source src="cri_video.mp4" type="video/ogg">
+			</video>
+		</aside>
+		<footer class="col-tab-12 col-12">copyright</footer>
+	</body>
+</html>
