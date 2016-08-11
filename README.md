@@ -1,2 +1,2 @@
 #4th small project
-##click to run cricket.surge.sh
+##click to run https://cricket.surge.sh
